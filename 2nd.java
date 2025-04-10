@@ -19,7 +19,7 @@ public class ex {
                      w[i].equals("}") || w[i].equals("(") || w[i].equals(")")) {
                 System.out.println("'" + w[i] + "' is a Symbol ");
             } 
-            else if (w[i].matches("-?\\d+(\\.\\d+)?")) {  // Regex to check for numbers (integer or decimal)
+            else if (w[i].matches("-?\\d+(\\.\\d+)?")) {  
                 System.out.println("'" + w[i] + "' is a Number ");
             }
             else {
@@ -29,3 +29,17 @@ public class ex {
         sc.close();
     }
 }
+
+output:
+Enter the string: 
+a = b + c * d ( 2 )
+'a' is a Variable 
+'=' is an Operator 
+'b' is a Variable 
+'+' is an Operator 
+'c' is a Variable 
+'*' is an Operator 
+'d' is a Variable 
+'(' is a Symbol 
+'2' is a Number 
+')' is a Symbol 
