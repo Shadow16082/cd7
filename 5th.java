@@ -115,3 +115,41 @@ public class FstNFlw {
         return sb.toString();
     }
 }
+
+output:
+Enter the non-terminals (e.g., EAT)
+SABC
+Enter the terminals (e.g., +*i)
+ab
+Specify the grammar (Use '9' for epsilon)
+Enter the number of productions for S:
+1
+Enter the productions:
+aABC
+Enter the number of productions for A:
+2
+Enter the productions:
+a
+bb
+Enter the number of productions for B:
+2
+Enter the productions:
+a
+a
+Enter the number of productions for C:
+2
+Enter the productions:
+b
+a
+
+FIRST sets:
+S: a
+A: ab
+B: a
+C: ba
+
+FOLLOW sets:
+S: $
+A: a
+B: ba
+C: $
