@@ -41,3 +41,25 @@ public class shiftReduce {
         }
     }
 }
+
+output:
+No.of production : 4
+Grammar : 
+E->E+E
+E->E*E
+E->(E)
+E->i
+String : i*i+i
+
+Stack	InputBuffer	Action
+i		*i+i		Shift i
+E		*i+i		Reduce E->i
+E*		i+i		Shift *
+E*i		+i		Shift i
+E*E		+i		Reduce E->i
+E		+i		Reduce E->E*E
+E+		i		Shift +
+E+i				Shift i
+E+E				Reduce E->i
+E				Reduce E->E+E
+Accepted
