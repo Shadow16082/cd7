@@ -34,3 +34,12 @@ public class LeftRecursionElimination
     }
   }
 }
+
+OUTPUT:
+Enter Number of Productions: 1
+Enter the grammar as A -> Aa / b:
+E->E+T/T
+GRAMMAR: E->E+T/T
+E is left recursive.
+E -> TE'
+E' -> +TE' / epsilon
