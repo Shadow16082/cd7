@@ -1,4 +1,3 @@
-
 import java.util.*;
 class Main{
     public static void main(String args[]){
@@ -34,6 +33,12 @@ class Main{
     while(!s.trim().startsWith(pre))
     pre=pre.substring(0,pre.length()-1);
     return pre;
- 
 }   
 }
+
+OUTPUT:
+Enter productions:
+A->AB|B
+A->AB|B
+A->A'
+A->AB|B
