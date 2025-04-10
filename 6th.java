@@ -130,3 +130,16 @@ public class LL1Parser {
         return stack.isEmpty();
     }
 }
+
+output:
+Enter number of productions:
+5
+Enter productions (use '@' for epsilon):
+E->TA
+A->+TA|@
+T->*FB|@
+F->(E)|i
+T->FB
+Enter string to check:
+i+i*i
+String is rejected.
